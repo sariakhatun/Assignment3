@@ -29,6 +29,19 @@
         font-family: "Sora", serif;
         font-optical-sizing: auto;
       }
+      /* a {
+        animation: bouncing 0.5s ease 0s infinite alternate both;
+      }
+      @keyframes bouncing {
+        0% {
+          bottom: 0;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+          bottom: 50px;
+          box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+        }
+      } */
     </style>
   </head>
   <body class="sora">
@@ -67,8 +80,14 @@
         </div>
       </nav>
       <section>
-        <h1 class="text-5xl font-semibold text-center mb-5 lg:text-center">
-          Freshness <span class="text-green-600">You Can</span> <br />
+        <!-- <a
+          href=""
+          class="bg-green-500 rounded-full inline-block text-white cursor-pointer text-sm py-2 px-4 mb-8 relative uppercase align-top text-center ml-40 lg:ml-60"
+          >Loading...</a
+        > -->
+
+        <h1 class="text-5xl font-semibold text-center mb-5">
+          Freshness <span class="text-green-600">You Can <br /></span>
           <span class="text-green-600">Count</span> On, Prices You’ll Love!
         </h1>
         <p class="text-lg text-[#111111] text-center">
@@ -83,7 +102,7 @@
     <main>
       <!-- section services -->
       <section class="mt-24">
-        <h1 class="font-bold text-green-600 text-4xl ml-4 lg:ml-28">
+        <h1 class="font-bold text-green-600 text-4xl ml-4 lg:ml-28 mb-8">
           Secrvices
         </h1>
         <div class="lg:flex mx-3 lg:ml-28 gap-4 lg:gap-16">
@@ -96,7 +115,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">24/7 Services</h2>
-              <p>
+              <p class="text-stone-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
               </p>
@@ -111,7 +130,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Fast Delivery</h2>
-              <p>
+              <p class="text-stone-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
               </p>
@@ -126,7 +145,7 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Healthy Products</h2>
-              <p>
+              <p class="text-stone-500">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
               </p>
@@ -135,7 +154,7 @@
         </div>
       </section>
       <!-- section popular products -->
-      <section class="mt-24 bg-[#EFEBE3]">
+      <section class="mt-24 bg-[#EFEBE3] pb-24">
         <h1 class="font-bold text-green-600 text-4xl ml-4 lg:ml-28 pt-24">
           Popular Products
         </h1>
@@ -143,7 +162,7 @@
           <!-- big card -->
 
           <div
-            class="mt-8 card w-96 shadow-xl ml-3 lg:ml-28 bg-gradient-to-r from-[#53DB3A] to-[#FFFFFF]"
+            class="mt-8 card w-96 shadow-xl ml-3 lg:ml-28 bg-gradient-to-r from-[#53DB3A] to-[#e3f8d0]"
           >
             <div class="card-body">
               <h2 class="card-title text-white pt-4">30% off</h2>
@@ -362,6 +381,61 @@
           </div>
         </div>
       </section>
+      <!-- more vegetables -->
+      <section class="mt-24">
+        <h1 class="font-bold text-green-600 text-4xl ml-4 lg:ml-28 mb-8">
+          More Vegetables
+        </h1>
+        <div class="  ml-4 lg:ml-28 lg:flex gap-8">
+          <div class="card bg-base-100 w-96 shadow-xl mb-8">
+            <figure class="bg-lime-400">
+              <img
+                src="c2-assets/alu.webp"
+                alt="Shoes" class="h-60 p-8 rounded-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Potatos!</h2>
+              <p>A potato is a starchy vegetable used in cooking worldwide.</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl mb-8">
+            <figure class="bg-lime-400">
+                <img
+                src="c2-assets/carrot.jpg"
+                alt="Shoes" class="h-60 p-8 rounded-full"
+              />
+              />
+            </figure class="bg-lime-400">
+            <div class="card-body">
+              <h2 class="card-title">Carrots!</h2>
+              <p>Carrots are crunchy, vegetables  great for health and cooking.
+              </p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 w-96 shadow-xl mb-8">
+            <figure class="bg-lime-400">
+              <img
+                src="c2-assets/cauliflower.jpg"
+                alt="Shoes" class="h-60 w-64 p-8 rounded-full"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
       <!-- section Arrival and offers -->
       <section class="mt-24">
         <h1 class="font-bold text-green-600 text-4xl ml-4 lg:ml-28">
@@ -450,7 +524,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-[#179800] relative ">
+      <section class="bg-[#179800] relative">
         <div class="lg:flex lg:justify-around pt-52 pb-12">
           <div class="pl-8">
             <img src="c2-assets/logo-footer.png" alt="" class="mb-4" />
@@ -465,8 +539,8 @@
             <p class="text-white mb-3 lg:mb-6">Services</p>
             <p class="text-white lg:mb-10">Contact us</p>
           </div>
-          <div class="text-white pl-8">
-            <p class="mb-4 ">Follow Us</p>
+          <div class="text-white pl-8 mt-14">
+            <p class="mb-4">Follow Us</p>
             <div class="flex gap-4">
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-instagram"></i>
